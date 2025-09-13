@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Assaf Liat Neta Mai</title>
+  <title>JSP Simple App</title>
   <style>
     body { font-family: Arial, sans-serif; max-width: 720px; margin: 40px auto; }
     .card { border: 1px solid #ddd; border-radius: 12px; padding: 20px; box-shadow: 0 2px 8px rgba(0,0,0,.06); }
@@ -17,7 +17,7 @@
 </head>
 <body>
   <div class="card">
-    <h2>שלום! 😄</h2>
+    <h2>שלום סטודנט דבאופס מצטיין</h2>
     <p>זוהי אפליקציה פשוטה ב‑JSP: שדה טקסט אחד וכפתור. בנוסף יש כאן לינק.</p>
 
     <form action="result.jsp" method="get">
