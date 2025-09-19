@@ -1,0 +1,227 @@
+{
+  "id": "8c592d88-fde1-4327-aca4-077f9bcae154",
+  "version": "2.0",
+  "name": "DevOps Project 1`",
+  "url": "http://localhost:8081/assaf-liat-neta-mai",
+  "tests": [{
+    "id": "942a455a-8321-42e4-bdad-e930ba504623",
+    "name": "Input Test",
+    "commands": [{
+      "id": "6d073ed5-bb3a-4e48-9b51-4d5059ce2e38",
+      "comment": "",
+      "command": "open",
+      "target": "/assaf-liat-neta-mai/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0e5380c1-7705-44d2-9764-718027d43749",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "997x839",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "98d64c53-c2e8-4f2a-9590-cde68dca0e0e",
+      "comment": "",
+      "command": "click",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8551cd69-9f68-480e-a674-f45d3dcfd888",
+      "comment": "",
+      "command": "type",
+      "target": "id=name",
+      "targets": [
+        ["id=name", "id"],
+        ["name=name", "name"],
+        ["css=#name", "css:finder"],
+        ["xpath=//input[@id='name']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "אסף"
+    }, {
+      "id": "63deeb1e-e499-4b6e-9157-fe4171889604",
+      "comment": "",
+      "command": "click",
+      "target": "css=html",
+      "targets": [
+        ["css=html", "css:finder"],
+        ["xpath=//html", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "76c53757-3519-49ce-99d1-dc2241abbf99",
+      "comment": "",
+      "command": "click",
+      "target": "css=button",
+      "targets": [
+        ["css=button", "css:finder"],
+        ["xpath=//button[@type='submit']", "xpath:attributes"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'אמרו לי שלום')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "44c7c530-30b9-4680-bb0f-9c84227def6a",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [],
+      "value": "שלום, אסף!"
+    }]
+  }, {
+    "id": "28c51419-ada0-4601-abdd-0d94b4fc65ab",
+    "name": "Link_To_HIT",
+    "commands": [{
+      "id": "0d5fa019-3c7c-4554-80ec-0cc67c0bb89f",
+      "comment": "",
+      "command": "open",
+      "target": "/assaf-liat-neta-mai",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a2fd3071-972c-4e67-846d-6e610e9ea668",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=a[href=\"https://www.hit.ac.il/\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d1b7101d-9926-4472-8628-0fa3a8f6971f",
+      "comment": "",
+      "command": "storeWindowHandle",
+      "target": "root",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "42c97337-fcc7-4548-90ef-ebd0d3fd16a9",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=מעבר לאתר HIT",
+      "targets": [
+        ["linkText=מעבר לאתר HIT", "linkText"],
+        ["css=.link", "css:finder"],
+        ["xpath=//a[contains(text(),'מעבר לאתר HIT')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'https://www.hit.ac.il/')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'מעבר לאתר HIT')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win8732",
+      "windowTimeout": 2000
+    }, {
+      "id": "0ce60cf0-38c8-41bc-87de-eb1e868caa9f",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${win8732}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "208d4a4b-9667-401a-97f7-920d375742ba",
+      "comment": "",
+      "command": "pause",
+      "target": "3000",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "0d0692ed-8e58-4622-9217-42d6919d3080",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=meta[property=\"og:url\"][content=\"https://www.hit.ac.il/\"]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6ceb96b2-afe2-42d8-b7bf-3a290bb10856",
+      "comment": "",
+      "command": "close",
+      "target": "",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "eca1d4cb-1e91-4d3e-980a-3baa366eb189",
+      "comment": "",
+      "command": "selectWindow",
+      "target": "handle=${root}",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "88042495-adae-4547-9c3e-b5f2acdca2c1",
+    "name": "NoName_Shows_Error",
+    "commands": [{
+      "id": "e46c0296-0be6-4abf-bd0b-379233423cc7",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8081/assaf-liat-neta-mai/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "7bba797c-2c7c-4738-8231-619e8e4b02c5",
+      "comment": "",
+      "command": "click",
+      "target": "css=button[type=\"submit\"] ",
+      "targets": [
+        ["linkText=חזרה", "linkText"],
+        ["css=p:nth-child(2) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'חזרה')]", "xpath:link"],
+        ["xpath=//a[contains(@href, 'index.jsp')]", "xpath:href"],
+        ["xpath=//a", "xpath:position"],
+        ["xpath=//a[contains(.,'חזרה')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "21968ba3-fe3b-4c4a-8fa9-85130291f189",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "JSP Simple App",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d271a2b8-41ff-4d78-ab86-e3d1d9930985",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8081/assaf-liat-neta-mai/result.jsp",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a641811f-ed77-4b06-8dfd-7186632c1144",
+      "comment": "",
+      "command": "assertText",
+      "target": "css=p",
+      "targets": [],
+      "value": "לא הוזן שם. חזרה"
+    }, {
+      "id": "2cfc4b6c-2d8c-47e1-9803-255f5f95f855",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=חזרה",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "747206aa-83aa-4f4d-9b44-f5e60053b9e4",
+      "comment": "",
+      "command": "assertTitle",
+      "target": "JSP Simple App",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "c6588e0c-026b-409d-af78-61de47d5ce95",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["942a455a-8321-42e4-bdad-e930ba504623"]
+  }],
+  "urls": ["https://b42d32a64b10.ngrok-free.app/", "http://localhost:8081/", "http://localhost:8081/assaf-liat-neta-mai"],
+  "plugins": []
+}
