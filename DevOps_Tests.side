@@ -220,7 +220,7 @@
     "persistSession": false,
     "parallel": false,
     "timeout": 300,
-    "tests": ["942a455a-8321-42e4-bdad-e930ba504623"]
+    "tests": ["942a455a-8321-42e4-bdad-e930ba504623", "28c51419-ada0-4601-abdd-0d94b4fc65ab", "88042495-adae-4547-9c3e-b5f2acdca2c1"]
   }],
   "urls": ["https://b42d32a64b10.ngrok-free.app/", "http://localhost:8081/", "http://localhost:8081/assaf-liat-neta-mai"],
   "plugins": []
