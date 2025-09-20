@@ -22,7 +22,7 @@
 
     <form action="result.jsp" method="get">
       <label for="name">הכנס שם:</label>
-      <input type="text" id="name" name="name" placeholder="תכניס שם כלשהו כדי שאוכל לומר שלום" required />
+      <input type="text" id="name" name="name" placeholder=" יא חרא תכניס שם כלשהו כדי שאוכל לומר שלום" required />
       <div class="row">
         <button type="submit">אמרו לי שלום</button>
       </div>
